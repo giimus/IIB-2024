@@ -1,0 +1,29 @@
+// Definindo os pinos
+const int botaoPin = 2;   // Pino do botão (digital 2)
+const int ledPin = 18;     // Pino do LED (digital 18)
+
+void setup() {
+  // Inicializando o pino do botão como entrada
+  pinMode(botaoPin, INPUT);
+  
+  // Inicializando o pino do LED como saída
+  pinMode(ledPin, OUTPUT);
+  
+  // Inicializando o LED como desligado
+  digitalWrite(ledPin, LOW);
+}
+
+void loop() {
+  // Lendo o estado do botão
+  int estadoBotao = digitalRead(botaoPin);
+
+  // Se o botão estiver pressionado, acende o LED
+  if (estadoBotao == HIGH) {
+    digitalWrite(ledPin, HIGH);  // Liga o LED
+  } else {
+    digitalWrite(ledPin, LOW);   // Desliga o LED
+  }
+  
+  // Atraso simples para evitar leitura instável
+  delay(50);
+}
