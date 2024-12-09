@@ -1,0 +1,15 @@
+<resources>
+    <!-- Nome do aplicativo -->
+    <string name="app_name">ControlESP32</string>
+
+    <!-- Mensagens ou textos utilizados -->
+    <string name="bluetooth_connection_failed">Conexão Bluetooth falhou!</string>
+    <string name="bluetooth_connected">Bluetooth conectado!</string>
+    <string name="bluetooth_disconnected">Bluetooth desconectado!</string>
+    <string name="led_on">LED ligado</string>
+    <string name="led_off">LED desligado</string>
+    <string name="turn_on_led">Ligar LED</string>
+    <string name="turn_off_led">Desligar LED</string>
+    <string name="connect">Conectar</string>
+    <string name="disconnect">Desconectar</string>
+</resources>

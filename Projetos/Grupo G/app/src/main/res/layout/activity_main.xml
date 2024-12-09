@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Projeto de Instrumentação-Detecção de Bilirrubina"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:paddingBottom="16dp" />
+
+    <!-- Status de Conexão -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusText"
+        android:text="Desconectado"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/_000000"
+        android:background="#D3D3D3"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nome do dispositivo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ESP32_LED"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Botões de LEDs -->
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnLed1On"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:background="#0000FF"
+            android:text="LED 1 On"
+            android:textColor="#FFFFFF" /> <!-- Azul -->
+
+        <Button
+            android:id="@+id/btnLed1Off"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="LED 1 Off"
+            android:textColor="#FFFFFF"
+            android:background="#0000FF" /> <!-- Vermelho -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnLed2On"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="LED 2 On"
+            android:textColor="#FFFFFF"
+            android:background="#008000" /> <!-- Verde -->
+
+        <Button
+            android:id="@+id/btnLed2Off"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="LED 2 Off"
+            android:textColor="#FFFFFF"
+            android:background="#008000" /> <!-- Amarelo -->
+    </LinearLayout>
+
+    <!-- Botão de conexão -->
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conectar"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="#D3D3D3"
+        android:padding="12dp" />
+
+</LinearLayout>
